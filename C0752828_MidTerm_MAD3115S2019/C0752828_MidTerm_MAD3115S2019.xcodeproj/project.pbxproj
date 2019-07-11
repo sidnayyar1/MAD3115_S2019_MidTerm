@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01F79ADA22D7FF71001744ED /* studentInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01F79AD922D7FF71001744ED /* studentInfo.plist */; };
 		01FBE74D22D7F7B1007D3779 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FBE74C22D7F7B1007D3779 /* AppDelegate.swift */; };
 		01FBE74F22D7F7B1007D3779 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FBE74E22D7F7B1007D3779 /* ViewController.swift */; };
 		01FBE75222D7F7B1007D3779 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01FBE75022D7F7B1007D3779 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01F79AD922D7FF71001744ED /* studentInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = studentInfo.plist; sourceTree = "<group>"; };
 		01FBE74922D7F7B1007D3779 /* C0752828_MidTerm_MAD3115S2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C0752828_MidTerm_MAD3115S2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01FBE74C22D7F7B1007D3779 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01FBE74E22D7F7B1007D3779 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				01FBE75E22D7FA5F007D3779 /* login.png */,
 				01FBE75522D7F7B2007D3779 /* LaunchScreen.storyboard */,
 				01FBE75822D7F7B2007D3779 /* Info.plist */,
+				01F79AD922D7FF71001744ED /* studentInfo.plist */,
 			);
 			path = C0752828_MidTerm_MAD3115S2019;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01FBE75722D7F7B2007D3779 /* LaunchScreen.storyboard in Resources */,
+				01F79ADA22D7FF71001744ED /* studentInfo.plist in Resources */,
 				01FBE75F22D7FA5F007D3779 /* login.png in Resources */,
 				01FBE75422D7F7B2007D3779 /* Assets.xcassets in Resources */,
 				01FBE75222D7F7B1007D3779 /* Main.storyboard in Resources */,
