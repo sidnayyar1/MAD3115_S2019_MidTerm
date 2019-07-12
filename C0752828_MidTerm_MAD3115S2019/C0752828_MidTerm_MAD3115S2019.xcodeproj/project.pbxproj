@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01F5AA5222D90DF700589090 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5AA5122D90DF700589090 /* Bill.swift */; };
+		01F5AA5422D90E0A00589090 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5AA5322D90E0A00589090 /* Customer.swift */; };
+		01F5AA5822D90E2A00589090 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5AA5722D90E2A00589090 /* Hydro.swift */; };
+		01F5AA5A22D90F3A00589090 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5AA5922D90F3A00589090 /* Internet.swift */; };
+		01F5AA5C22D90F7A00589090 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5AA5B22D90F7A00589090 /* Mobile.swift */; };
 		01F79ADC22D8051D001744ED /* UserInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01F79ADB22D8051D001744ED /* UserInfo.plist */; };
 		01F79AE022D88572001744ED /* BillListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F79ADF22D88572001744ED /* BillListTableViewController.swift */; };
 		01FBE74D22D7F7B1007D3779 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FBE74C22D7F7B1007D3779 /* AppDelegate.swift */; };
@@ -18,6 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01F5AA5122D90DF700589090 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		01F5AA5322D90E0A00589090 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		01F5AA5722D90E2A00589090 /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
+		01F5AA5922D90F3A00589090 /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
+		01F5AA5B22D90F7A00589090 /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		01F79ADB22D8051D001744ED /* UserInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = UserInfo.plist; sourceTree = "<group>"; };
 		01F79ADF22D88572001744ED /* BillListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillListTableViewController.swift; sourceTree = "<group>"; };
 		01FBE74922D7F7B1007D3779 /* C0752828_MidTerm_MAD3115S2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C0752828_MidTerm_MAD3115S2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +51,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01F5AA5022D90DCB00589090 /* SwiftClasses */ = {
+			isa = PBXGroup;
+			children = (
+				01F5AA5122D90DF700589090 /* Bill.swift */,
+				01F5AA5322D90E0A00589090 /* Customer.swift */,
+				01F5AA5722D90E2A00589090 /* Hydro.swift */,
+				01F5AA5922D90F3A00589090 /* Internet.swift */,
+				01F5AA5B22D90F7A00589090 /* Mobile.swift */,
+			);
+			path = SwiftClasses;
+			sourceTree = "<group>";
+		};
 		01FBE74022D7F7B1007D3779 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +82,7 @@
 		01FBE74B22D7F7B1007D3779 /* C0752828_MidTerm_MAD3115S2019 */ = {
 			isa = PBXGroup;
 			children = (
+				01F5AA5022D90DCB00589090 /* SwiftClasses */,
 				01FBE74C22D7F7B1007D3779 /* AppDelegate.swift */,
 				01FBE74E22D7F7B1007D3779 /* LoginViewController.swift */,
 				01FBE75022D7F7B1007D3779 /* Main.storyboard */,
@@ -146,9 +169,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F5AA5222D90DF700589090 /* Bill.swift in Sources */,
+				01F5AA5422D90E0A00589090 /* Customer.swift in Sources */,
 				01FBE74F22D7F7B1007D3779 /* LoginViewController.swift in Sources */,
+				01F5AA5A22D90F3A00589090 /* Internet.swift in Sources */,
 				01F79AE022D88572001744ED /* BillListTableViewController.swift in Sources */,
+				01F5AA5822D90E2A00589090 /* Hydro.swift in Sources */,
 				01FBE74D22D7F7B1007D3779 /* AppDelegate.swift in Sources */,
+				01F5AA5C22D90F7A00589090 /* Mobile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
