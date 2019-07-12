@@ -111,7 +111,7 @@
                                 <items>
                                     <navigationItem title="Customer List" id="neJ-v6-UsF">
                                         <barButtonItem key="rightBarButtonItem" title="Logout" style="plain" id="d84-NA-LhF">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nfO-HG-vwy">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nfO-HG-vwy">
                                                 <rect key="frame" x="346" y="7" width="48" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Logout"/>
@@ -119,6 +119,9 @@
                                                     <segue destination="BYZ-38-t0r" kind="show" id="6Pr-O5-fSq"/>
                                                 </connections>
                                             </button>
+                                            <connections>
+                                                <segue destination="7gF-XZ-G6j" kind="unwind" unwindAction="unWindLogoutFromAnyScreenWithStoryboard:" id="YeB-FL-pLP"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -151,8 +154,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vqS-j5-quX"/>
                     </view>
+                    <connections>
+                        <outlet property="tblCustList" destination="ahv-cf-jJO" id="yme-yE-LkG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DJb-PX-Djy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="7gF-XZ-G6j" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="718.84057971014499" y="87.723214285714278"/>
         </scene>

@@ -8,9 +8,14 @@
 
 import UIKit
 
-class BillListTableViewController: UIViewController {
+class BillListTableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
+  
+    
+    
+    
 
     
+    @IBOutlet weak var tblCustList: UITableView!
     var custArray = Array<Customer>()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,12 +51,28 @@ class BillListTableViewController: UIViewController {
         
         self.custArray = [customer1,customer2,customer3]
         
-            // adding customers in its array
-//            self.customer_array = [customer_1, customer_2, customer_3]
-//            self.tblCustomerList.delegate = self
-//            self.tblCustomerList.dataSource = self
-//
+        self.tblCustList.delegate = self
+        self.tblCustList.dataSource = self
+        
+        
+        
+        
+        
+
 }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return custArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let  cell = tableView.dequeueReusableCell(withIdentifier: "CustomerList") as! UITableViewCell
+        cell.textLabel?.text = self.custArray[indexPath.row].customer_First_Name
+        
+        
+        return cell
+    }
     
     // Do any additional setup after loading the view.
 
@@ -67,4 +88,6 @@ class BillListTableViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-     */}
+     */
+    
+}

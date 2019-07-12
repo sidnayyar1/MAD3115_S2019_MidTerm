@@ -15,6 +15,15 @@ class Customer{
     var customer_Last_Name:String?
     var customer_email_Id:String?
     var customer_Phone_Number:String
+    var billDictionary = [Int:Bill]()
+    var totalAmountPayable: Float{
+        var TotalAmount:Float = 0.0
+        for bill in billDictionary
+        {
+            TotalAmount = TotalAmount + bill.value.total_Bill_Amount!
+        }
+        return TotalAmount
+    }
     
     
     init(customerId:Int,Customerfname:String,customerlname:String,customeremail:String,phoneNumber:String) {
@@ -25,13 +34,6 @@ class Customer{
         self.customer_email_Id = customeremail
         self.customer_Phone_Number = phoneNumber
 }
-    var billDictionary = [Int:Bill]()
-    var totalAmountPayable: Float{
-        var TotalAmount:Float = 0.0
-        for bill in billDictionary
-        {
-            TotalAmount = TotalAmount + bill.value.total_Bill_Amount!
-        }
-    }
+    
     
 }
