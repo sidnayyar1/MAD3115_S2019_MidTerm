@@ -21,8 +21,13 @@ class Bill{
         self.bill_Date = billDate
         self.bill_Type = billType
         self.total_Bill_Amount = totalBillAmount
-
-
+    }
+    //computing totalbill
+    
+    var totalbill:Float
+    {
+        let totalb:Float = 0.0
+        return totalb
     }
 
 }

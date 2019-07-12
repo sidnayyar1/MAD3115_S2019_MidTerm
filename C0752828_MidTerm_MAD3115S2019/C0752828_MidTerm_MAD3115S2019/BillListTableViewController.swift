@@ -14,6 +14,7 @@ class BillListTableViewController: UIViewController {
     var custArray = Array<Customer>()
     override func viewDidLoad() {
         super.viewDidLoad()
+        //created bill objects
         
         var bill_1  = Mobile(bill_ID: 1, billDate: Date(), billType: "Mobile",totalBillAmount: 88.90, mobileManufName: "Google", planName: "Pixel", mobileNumber:"6475623440" , internetGbUsed: 50.9, minutesUsed: 20.9)
         
@@ -25,6 +26,22 @@ class BillListTableViewController: UIViewController {
         
         var bill_5 = Hydro(bill_ID: 6, billDate: Date(), billType: "Hydro", totalBillAmount: 76.09,agencyname: "Gig Tech", unitConsumed: 77)
         
+        
+        // creating customers
+        
+        var customer_1 = Customer(customerId: 1, Customerfname:"rahul", customerlname: "rastogi", customeremail:"rahul@gmail.com",phoneNumber:"6475623440")
+        
+        customer_1.billDictionary[0] = bill_1
+        customer_1.billDictionary[1] = bill_5
+        customer_1.billDictionary[2] = bill_2
+    }
+    
+    
+    // Do any additional setup after loading the view.
+}
+
+
+
     
     /*
     // MARK: - Navigation
@@ -35,6 +52,3 @@ class BillListTableViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-    }
-}
