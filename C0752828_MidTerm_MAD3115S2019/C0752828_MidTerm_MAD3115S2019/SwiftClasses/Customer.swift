@@ -14,7 +14,7 @@ class Customer{
     var customer_First_Name:String?
     var customer_Last_Name:String?
     var customer_email_Id:String?
-    var customer_Phone_Number:String
+    var customer_Phone_Number:String?
     var billDictionary = [Int:Bill]()
     static var customerClciked = Customer()
     var totalAmountPayable: Float{
@@ -27,6 +27,7 @@ class Customer{
     }
     
     init(){
+        customer_ID = Int()
         customer_First_Name = String()
         customer_Last_Name = String()
         customer_email_Id = String()

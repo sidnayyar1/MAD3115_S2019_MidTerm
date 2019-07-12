@@ -19,7 +19,7 @@ class BillListTableViewController: UIViewController,UITableViewDelegate,UITableV
     var custArray = Array<Customer>()
     override func viewDidLoad() {
         super.viewDidLoad()
-        //created bill objects
+      
         
         var bill_1  = Mobile(bill_ID: 1, billDate: Date(), billType: "Mobile",totalBillAmount: 88.90, mobileManufName: "Google", planName: "Pixel", mobileNumber:"6475623440" , internetGbUsed: 50.9, minutesUsed: 20.9)
         
@@ -33,7 +33,7 @@ class BillListTableViewController: UIViewController,UITableViewDelegate,UITableV
         
       
         var customer1 = Customer(customerId: 1, Customerfname:"rahul", customerlname: "rastogi", customeremail:"rahul@gmail.com",phoneNumber:"6475623440")
-        //creating customer dictionary
+
         customer1.billDictionary[0] = bill_1
         customer1.billDictionary[1] = bill_5
         customer1.billDictionary[2] = bill_2
@@ -51,14 +51,12 @@ class BillListTableViewController: UIViewController,UITableViewDelegate,UITableV
         
         self.custArray = [customer1,customer2,customer3]
         
-        self.tblCustList.delegate = self
+      self.tblCustList.delegate = self
         self.tblCustList.dataSource = self
         
+            
+            
         
-        
-        
-        
-
 }
     
     
