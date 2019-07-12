@@ -12,6 +12,7 @@
 		01F5AA5822D90E2A00589090 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5AA5722D90E2A00589090 /* Hydro.swift */; };
 		01F5AA5A22D90F3A00589090 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5AA5922D90F3A00589090 /* Internet.swift */; };
 		01F5AA5C22D90F7A00589090 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5AA5B22D90F7A00589090 /* Mobile.swift */; };
+		01F5AA5E22D9378100589090 /* student.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F5AA5D22D9378100589090 /* student.png */; };
 		01F79ADC22D8051D001744ED /* UserInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01F79ADB22D8051D001744ED /* UserInfo.plist */; };
 		01F79AE022D88572001744ED /* BillListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F79ADF22D88572001744ED /* BillListTableViewController.swift */; };
 		01FBE74D22D7F7B1007D3779 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FBE74C22D7F7B1007D3779 /* AppDelegate.swift */; };
@@ -28,6 +29,7 @@
 		01F5AA5722D90E2A00589090 /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
 		01F5AA5922D90F3A00589090 /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
 		01F5AA5B22D90F7A00589090 /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
+		01F5AA5D22D9378100589090 /* student.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = student.png; sourceTree = "<group>"; };
 		01F79ADB22D8051D001744ED /* UserInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = UserInfo.plist; sourceTree = "<group>"; };
 		01F79ADF22D88572001744ED /* BillListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillListTableViewController.swift; sourceTree = "<group>"; };
 		01FBE74922D7F7B1007D3779 /* C0752828_MidTerm_MAD3115S2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C0752828_MidTerm_MAD3115S2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +89,7 @@
 				01FBE74E22D7F7B1007D3779 /* LoginViewController.swift */,
 				01FBE75022D7F7B1007D3779 /* Main.storyboard */,
 				01FBE75322D7F7B2007D3779 /* Assets.xcassets */,
+				01F5AA5D22D9378100589090 /* student.png */,
 				01FBE75E22D7FA5F007D3779 /* login.png */,
 				01FBE75522D7F7B2007D3779 /* LaunchScreen.storyboard */,
 				01FBE75822D7F7B2007D3779 /* Info.plist */,
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01FBE75722D7F7B2007D3779 /* LaunchScreen.storyboard in Resources */,
+				01F5AA5E22D9378100589090 /* student.png in Resources */,
 				01FBE75F22D7FA5F007D3779 /* login.png in Resources */,
 				01FBE75422D7F7B2007D3779 /* Assets.xcassets in Resources */,
 				01F79ADC22D8051D001744ED /* UserInfo.plist in Resources */,
