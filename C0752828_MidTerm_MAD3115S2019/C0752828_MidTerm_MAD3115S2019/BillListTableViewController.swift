@@ -8,7 +8,8 @@
 
 import UIKit
 
-class BillListTableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
+class BillListTableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+ 
   
     
     
@@ -58,28 +59,41 @@ class BillListTableViewController: UIViewController,UITableViewDelegate,UITableV
             
         
 }
-    
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return custArray.count
+         return custArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let  cell = tableView.dequeueReusableCell(withIdentifier: "CustomerList") as! UITableViewCell
-        cell.textLabel?.text = self.custArray[indexPath.row].customer_First_Name
-        
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.onClickCustomer(_:)))
-        cell.tag = indexPath.row
-        cell.addGestureRecognizer(tapGesture)
-        return cell
+                cell.textLabel?.text = self.custArray[indexPath.row].customer_First_Name
+        //
+        //        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.onClickCustomer(_:)))
+        //        cell.tag = indexPath.row
+        //        cell.addGestureRecognizer(tapGesture)
+               return cell
     }
-    @objc func onClickCustomer(_ sender: UITapGestureRecognizer) {
-        print(sender.view!.tag)// to display index
-        
-        Customer.customerClciked = self.custArray[(sender.view?.tag)!]
-        self.performSegue(withIdentifier: "furtherDetails", sender: nil)
-        
-    }
+    
+    
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return custArray.count
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let  cell = tableView.dequeueReusableCell(withIdentifier: "CustomerList") as! UITableViewCell
+//        cell.textLabel?.text = self.custArray[indexPath.row].customer_First_Name
+//
+//        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.onClickCustomer(_:)))
+//        cell.tag = indexPath.row
+//        cell.addGestureRecognizer(tapGesture)
+//        return cell
+//    }
+//    @objc func onClickCustomer(_ sender: UITapGestureRecognizer) {
+//        print(sender.view!.tag)// to display index
+//
+//        Customer.customerClciked = self.custArray[(sender.view?.tag)!]
+//        self.performSegue(withIdentifier: "NextPage", sender: nil)
+//
+//    }
     // Do any additional setup after loading the view.
 
 

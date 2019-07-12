@@ -27,7 +27,7 @@ class Customer{
     }
     
     init(){
-        customer_ID = Int()
+        //customer_ID = Int()
         customer_First_Name = String()
         customer_Last_Name = String()
         customer_email_Id = String()

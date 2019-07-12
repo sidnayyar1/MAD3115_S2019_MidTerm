@@ -115,9 +115,6 @@
                                                 <rect key="frame" x="20" y="7" width="48" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Logout"/>
-                                                <connections>
-                                                    <segue destination="BYZ-38-t0r" kind="show" id="6Pr-O5-fSq"/>
-                                                </connections>
                                             </button>
                                             <connections>
                                                 <segue destination="7gF-XZ-G6j" kind="unwind" unwindAction="unWindLogoutFromAnyScreenWithStoryboard:" id="YeB-FL-pLP"/>
@@ -127,7 +124,7 @@
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ahv-cf-jJO">
-                                <rect key="frame" x="20" y="86" width="374" height="755"/>
+                                <rect key="frame" x="20" y="96" width="374" height="755"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -160,10 +157,10 @@
             </objects>
             <point key="canvasLocation" x="718.84057971014499" y="87.723214285714278"/>
         </scene>
-        <!--Show Bill Details View Controller-->
+        <!--View Controller-->
         <scene sceneID="D5b-bn-AUv">
             <objects>
-                <viewController id="5e8-Lu-gzZ" customClass="ShowBillDetailsViewController" customModule="C0752828_MidTerm_MAD3115S2019" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5e8-Lu-gzZ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CzE-EO-He9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -287,7 +284,7 @@
                         <outlet property="lblfname" destination="LEy-eo-44i" id="Jew-k7-aNY"/>
                         <outlet property="lbllastname" destination="c5s-5j-7pp" id="0k8-pB-2wR"/>
                         <outlet property="lblphonenumber" destination="4Pk-mN-r4y" id="IVb-KO-lSc"/>
-                        <segue destination="YW5-eo-Jtb" kind="show" id="7oB-XF-tfn"/>
+                        <segue destination="YW5-eo-Jtb" kind="show" identifier="NextPage" id="7oB-XF-tfn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fc4-kg-fRj" userLabel="First Responder" sceneMemberID="firstResponder"/>
