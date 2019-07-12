@@ -19,7 +19,6 @@ class BillListTableViewController: UIViewController {
         var bill_1  = Mobile(bill_ID: 1, billDate: Date(), billType: "Mobile",totalBillAmount: 88.90, mobileManufName: "Google", planName: "Pixel", mobileNumber:"6475623440" , internetGbUsed: 50.9, minutesUsed: 20.9)
         
         var bill_2 = Hydro(bill_ID: 2, billDate: Date(), billType: "Hydro", totalBillAmount: 20.2, agencyname: "StarHydro", unitConsumed: 80)
-       // var bill_2  = Mobile(bill_ID: 2, billDate: Date(), billType: "Mobile",totalBillAmount: 98.90, mobileManufName: "Sony", planName: "E2", mobileNumber: "4571234567", internetGbUsed: 60.9, minutesUsed: 70.7)
         var bill_3 = Internet(bill_ID: 3, billDate: Date(), billType: "Internet", totalBillAmount: 48.4, providerName: "Freedom", InternetGbUsed: 10.0)
         
         var bill_4 = Mobile(bill_ID: 4, billDate: Date(), billType: "Mobile", totalBillAmount: 30.5, mobileManufName: "Apple", planName: "super", mobileNumber: "6262129087", internetGbUsed: 15.0, minutesUsed: 30.2)
@@ -27,18 +26,35 @@ class BillListTableViewController: UIViewController {
         var bill_5 = Hydro(bill_ID: 6, billDate: Date(), billType: "Hydro", totalBillAmount: 76.09,agencyname: "Gig Tech", unitConsumed: 77)
         
         
-        // creating customers
-        
-        var customer_1 = Customer(customerId: 1, Customerfname:"rahul", customerlname: "rastogi", customeremail:"rahul@gmail.com",phoneNumber:"6475623440")
-        
-        customer_1.billDictionary[0] = bill_1
-        customer_1.billDictionary[1] = bill_5
-        customer_1.billDictionary[2] = bill_2
-    }
+      
+        var customer1 = Customer(customerId: 1, Customerfname:"rahul", customerlname: "rastogi", customeremail:"rahul@gmail.com",phoneNumber:"6475623440")
+        //creating customer dictionary
+        customer1.billDictionary[0] = bill_1
+        customer1.billDictionary[1] = bill_5
+        customer1.billDictionary[2] = bill_2
     
+    
+          var customer2 = Customer(customerId: 2, Customerfname: "sidharth", customerlname: "Nayyar", customeremail: "sidnayyar1", phoneNumber: "6479803783")
+    
+        customer2.billDictionary[0] = bill_3
+        customer2.billDictionary[1] = bill_4
+        
+        var customer3 = Customer(customerId: 3, Customerfname: "Rhoit", customerlname: "Sharma", customeremail: "rhoit@gmail.com", phoneNumber: "4267892087")
+        customer3.billDictionary[0] = bill_1
+        customer3.billDictionary[1] = bill_2
+        customer3.billDictionary[2] = bill_4
+        
+        self.custArray = [customer1,customer2,customer3]
+        
+            // adding customers in its array
+//            self.customer_array = [customer_1, customer_2, customer_3]
+//            self.tblCustomerList.delegate = self
+//            self.tblCustomerList.dataSource = self
+//
+}
     
     // Do any additional setup after loading the view.
-}
+
 
 
 
@@ -51,4 +67,4 @@ class BillListTableViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+     */}
