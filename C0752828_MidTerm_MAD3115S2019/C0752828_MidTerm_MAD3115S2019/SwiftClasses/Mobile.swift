@@ -16,31 +16,22 @@ class Mobile:Bill {
         }
     }
     
-    var mobile_Number: Int?
-    var mobilenumber:Int?{
-        get{
-            return mobile_Number
-        }
-    }
+    var mobile_Number: String?
+
     var internet_Gb_Used:Int
-    var internetgdused:Int?{
-        get {
-            return internet_Gb_Used
-        }
-    }
-    var minutes_Used:Int
-    var minutesused:Int {
-        get {
-            return minutes_Used
-        }
-    }
+    var internetgdused:Float?
     
-    init(bill_ID:Int,billDate:Date,billType:String,totalBillAmount:Float,mobileManufName:String,planName:String,mobileNumber:Int,internetGbUsed:Int,minutesUsed:Int) {
+
+    var minutes_Used:Float
+    var minutesused:Float
+    
+    
+init(bill_ID:Int,billDate:Date,billType:String,totalBillAmount:Float,mobileManufName:String,planName:String,mobileNumber:String,internetGbUsed:Float,minutesUsed:Float) {
         
         self.mobile_Manufacturer_Name = mobileManufName
         self.plan_name = planName
         self.mobile_Number = mobileNumber
-        self.internet_Gb_Used = internetGbUsed
+        self.internetgdused = internetGbUsed
         self.minutes_Used = minutesUsed
         super.init(bill_ID:bill_ID,billDate: billDate,billType: billType,totalBillAmount: totalBillAmount)
         //        super.init(bill_ID:billId, billDate:bill_Date, billType: bill_Type,totalBillAmount:total_Bill_Amount)

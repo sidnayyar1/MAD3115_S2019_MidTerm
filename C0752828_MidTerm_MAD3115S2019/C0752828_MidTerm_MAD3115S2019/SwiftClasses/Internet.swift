@@ -10,15 +10,10 @@ import Foundation
 class Internet:Bill {
     
     var provide_Name:String?
-    var Internet_Gb_Used:Int?
-    var internetgbused: Int?{
-        get {
-            return Internet_Gb_Used
-        }
-    }
+    var Internet_Gb_Used:Float?
     
     
-    init(bill_ID:Int,billDate:Date,billType:String,totalBillAmount:Float,providerName:String,InternetGbUsed:Int) {
+    init(bill_ID:Int,billDate:Date,billType:String,totalBillAmount:Float,providerName:String,InternetGbUsed:Float) {
         
         self.provide_Name = providerName
         self.Internet_Gb_Used = InternetGbUsed
@@ -26,5 +21,4 @@ class Internet:Bill {
         super.init(bill_ID: bill_ID, billDate: billDate, billType: billType, totalBillAmount: totalBillAmount)
         
 }
-
 }
