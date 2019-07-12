@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>users</key>
+	<array>
+		<dict>
+			<key>userPassword</key>
+			<string>Rohit@123</string>
+			<key>userId</key>
+			<integer>1</integer>
+			<key>userEmail</key>
+			<string>rohit@gmail.com</string>
+		</dict>
+		<dict>
+			<key>userId</key>
+			<integer>2</integer>
+			<key>userPassword</key>
+			<string>Sid@123</string>
+			<key>userEmailId</key>
+			<string>sidnayyar1@gmail.com</string>
+		</dict>
+        <dict>
+            <key>userPassword</key>
+            <string>rajat@123</string>
+            <key>userId</key>
+            <integer>3</integer>
+            <key>userEmail</key>
+            <string>rajat@@gmail.com</string>
+        </dict>
+        <dict>
+            <key>userPassword</key>
+            <string>nikhil@123</string>
+            <key>userId</key>
+            <integer>4</integer>
+            <key>userEmail</key>
+            <string>nikhil@gmail.com</string>
+        </dict>
+        <dict>
+            <key>userPassword</key>
+            <string>rahul@123</string>
+            <key>userId</key>
+            <integer>5</integer>
+            <key>userEmail</key>
+            <string>rahul@gmail.com</string>
+        </dict>
+	</array>
+</dict>
+</plist>
