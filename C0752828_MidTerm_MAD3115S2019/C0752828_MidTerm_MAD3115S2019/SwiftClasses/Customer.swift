@@ -10,7 +10,7 @@ import Foundation
 class Customer{
     
     
-    var customer_ID:Int?
+    var customer_ID:Int
     var customer_First_Name:String?
     var customer_Last_Name:String?
     var customer_email_Id:String?
@@ -27,7 +27,7 @@ class Customer{
     }
     
     init(){
-        //customer_ID = Int()
+        customer_ID = Int()
         customer_First_Name = String()
         customer_Last_Name = String()
         customer_email_Id = String()
