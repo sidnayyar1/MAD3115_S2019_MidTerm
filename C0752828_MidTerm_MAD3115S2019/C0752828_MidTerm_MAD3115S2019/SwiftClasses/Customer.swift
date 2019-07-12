@@ -16,6 +16,7 @@ class Customer{
     var customer_email_Id:String?
     var customer_Phone_Number:String
     var billDictionary = [Int:Bill]()
+    static var customerClciked = Customer()
     var totalAmountPayable: Float{
         var TotalAmount:Float = 0.0
         for bill in billDictionary
@@ -23,6 +24,13 @@ class Customer{
             TotalAmount = TotalAmount + bill.value.total_Bill_Amount!
         }
         return TotalAmount
+    }
+    
+    init(){
+        customer_First_Name = String()
+        customer_Last_Name = String()
+        customer_email_Id = String()
+        customer_Phone_Number = String()
     }
     
     
