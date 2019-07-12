@@ -17,9 +17,11 @@ class ShowBillDetailsViewController: UIViewController {
     @IBOutlet weak var lblphonenumber: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-//self.lblcustomerid.text = String(Customer.customerClciked.customer_ID!)
-        
-        
+        self.lblcustomerid.text = String(Customer.customerClciked.customer_ID)
+        self.lblfname.text = String(Customer.customerClciked.customer_First_Name!)
+        self.lbllastname.text = String(Customer.customerClciked.customer_Last_Name!)
+         self.lblemail.text = String(Customer.customerClciked.customer_email_Id!)
+         self.lblphonenumber.text = String(Customer.customerClciked.customer_Phone_Number!)
         // Do any additional setup after loading the view.
     }
     
