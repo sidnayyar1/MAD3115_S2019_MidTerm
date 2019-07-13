@@ -10,10 +10,18 @@ import Foundation
 class Bill{
 
 
-    var billId: Int?
-    var bill_Date: Date?
-    var bill_Type: String?
-    var total_Bill_Amount: Float?
+    var billId: Int
+    var bill_Date: Date
+    var bill_Type: String
+    var total_Bill_Amount: Float
+    
+    //computing totalbill
+    
+    var totalbill:Float
+    {
+        let totalb:Float = 0.0
+        return totalb
+    }
 
     init(bill_ID:Int,billDate:Date,billType:String,totalBillAmount:Float) {
 
@@ -22,12 +30,6 @@ class Bill{
         self.bill_Type = billType
         self.total_Bill_Amount = totalBillAmount
     }
-    //computing totalbill
-    
-    var totalbill:Float
-    {
-        let totalb:Float = 0.0
-        return totalb
-    }
+   
 
 }

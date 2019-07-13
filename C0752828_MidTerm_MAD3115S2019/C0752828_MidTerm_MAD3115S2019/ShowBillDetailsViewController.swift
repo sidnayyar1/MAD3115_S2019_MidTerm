@@ -8,24 +8,46 @@
 
 import UIKit
 
-class ShowBillDetailsViewController: UIViewController {
+class ShowBillDetailsViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+   
 
+   
     @IBOutlet weak var lblcustomerid: UILabel!
     @IBOutlet weak var lblfname: UILabel!
-    @IBOutlet weak var lbllastname: UILabel!
+    @IBOutlet weak var lbllname: UILabel!
     @IBOutlet weak var lblemail: UILabel!
-    @IBOutlet weak var lblphonenumber: UILabel!
+    @IBOutlet weak var lblphone: UILabel!
+    @IBOutlet weak var lbltotalamout: UILabel!
+    @IBOutlet weak var tblcustomerbills: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.lblcustomerid.text = String(Customer.customerClciked.customer_ID)
-        self.lblfname.text = String(Customer.customerClciked.customer_First_Name!)
-        self.lbllastname.text = String(Customer.customerClciked.customer_Last_Name!)
-         self.lblemail.text = String(Customer.customerClciked.customer_email_Id!)
-         self.lblphonenumber.text = String(Customer.customerClciked.customer_Phone_Number!)
         // Do any additional setup after loading the view.
+        self.lblcustomerid.text = String(Customer.customerClciked.customer_ID)
+        self.lblfname.text = Customer.customerClciked.customer_First_Name
+         self.lbllname.text = Customer.customerClciked.customer_Last_Name
+        self.lblemail.text = Customer.customerClciked.customer_email_Id
+        self.lblphone.text = Customer.customerClciked.customer_Phone_Number
+        self.lbltotalamout.text = String(Customer.customerClciked.totalAmountPayable)
+        
+        self.tblcustomerbills.delegate = self
+        self.tblcustomerbills.dataSource = self
+        
+        
     }
     
-
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return Customer.customerClciked.billDictionary.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let  cell = tableView.dequeueReusableCell(withIdentifier: "custBills") as! UITableViewCell
+        cell.textLabel?.text = Customer.customerClciked.billDictionary[indexPath.row]?.bill_Type
+        
+        return cell
+    }
+    
     /*
     // MARK: - Navigation
 

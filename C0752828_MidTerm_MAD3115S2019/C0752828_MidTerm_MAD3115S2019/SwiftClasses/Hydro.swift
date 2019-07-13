@@ -9,18 +9,18 @@
 import Foundation
 
 class Hydro:Bill {
-    var agency_Name:String?
-    var agencyname:String? {
-        get{
-            return agency_Name
-        }
-    }
+    var agency_Name:String
+//    var agencyname:String {
+//        get{
+//            return agency_Name
+//        }
+//    }
     var unit_Consumed:Int?
-    var unitconsumed: Int? {
-        get{
-            return unit_Consumed
-        }
-    }
+//    var unitconsumed: Int? {
+//        get{
+//            return unit_Consumed
+//        }
+//    }
     
     init(bill_ID:Int,billDate:Date,billType:String,totalBillAmount:Float,agencyname:String,unitConsumed:Int) {
         self.agency_Name = agencyname

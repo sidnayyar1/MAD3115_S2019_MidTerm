@@ -10,7 +10,7 @@ import Foundation
 class Mobile:Bill {
     var mobile_Manufacturer_Name:String?
     var plan_name:String?
-    var planname:String?
+    //var planname:String?
     
     var mobile_Number: String?
 

@@ -50,7 +50,7 @@ class LoginViewController: UIViewController {
                         }
                         print("Hello")
                     
-                       self.performSegue(withIdentifier: "userProfile", sender: nil)
+                      self.performSegue(withIdentifier: "userList", sender: self)
                        loggedIn = true
                     }
                     
@@ -60,7 +60,7 @@ class LoginViewController: UIViewController {
             }
         
         if !loggedIn {
-            let alert = UIAlertController(title: "Error", message: "User Email ID or Password is Incorrect", preferredStyle: UIAlertController.Style.alert)
+            let alert = UIAlertController(title: "Error", message: "Invalid User Id and Password!Try again", preferredStyle: UIAlertController.Style.alert)
             let okAction = UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil)
              let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil)
             alert.addAction(okAction)
@@ -87,12 +87,12 @@ class LoginViewController: UIViewController {
     
     }
     @IBAction func unWindLogoutFromAnyScreen(storyboard : UIStoryboardSegue){
-        
+
         print("Logout")
-        let s = storyboard.source as! BillListTableViewController
+        _ = storyboard.source as! BillListTableViewController
         userEmailTxt.text = ""
         userPasswordTxt.text = ""
-        
+
     
     }
 
