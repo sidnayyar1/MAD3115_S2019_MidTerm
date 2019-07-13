@@ -343,6 +343,7 @@
         <image name="login.png" width="409.60000610351562" height="409.60000610351562"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="f8y-TK-77L"/>
         <segue reference="Jj0-8E-uyQ"/>
         <segue reference="Kf1-OW-PxL"/>
     </inferredMetricsTieBreakers>
