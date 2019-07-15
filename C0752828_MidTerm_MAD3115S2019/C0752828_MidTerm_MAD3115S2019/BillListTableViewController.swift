@@ -59,6 +59,8 @@ class BillListTableViewController: UIViewController,UITableViewDelegate,UITableV
         
         
 }
+   
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.custArray.count

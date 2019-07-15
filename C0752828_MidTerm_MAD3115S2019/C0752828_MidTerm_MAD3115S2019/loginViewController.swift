@@ -10,6 +10,7 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    
        var loggedIn = false
     @IBOutlet weak var userEmailTxt: UITextField!
     @IBOutlet weak var userPasswordTxt: UITextField!
@@ -94,6 +95,11 @@ class LoginViewController: UIViewController {
         userPasswordTxt.text = ""
 
     
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
+    {
+        self.view.endEditing(true)
     }
 
 }

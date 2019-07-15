@@ -32,10 +32,14 @@ class ShowBillDetailsViewController: UIViewController,UITableViewDelegate,UITabl
         
         self.tblcustomerbills.delegate = self
         self.tblcustomerbills.dataSource = self
-        
+          var add = UIBarButtonItem(title: "Add New", style: .plain, target: self, action: #selector(self.nextPage(_sender:)))
+        self.navigationItem.rightBarButtonItem = add
         
     }
-    
+    @objc func nextPage(_sender: Any){
+        
+        self.performSegue(withIdentifier: "nextPageTo", sender: nil)
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Customer.customerClciked.billDictionary.count
